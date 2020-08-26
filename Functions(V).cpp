@@ -16,22 +16,22 @@ int main() {
 	f(19);
 }
 */
-//Fonksiyonların Değer Döndürmesi ve Çağrılması
+//FonksiyonlarÃ½n DeÃ°er DÃ¶ndÃ¼rmesi ve Ã‡aÃ°rÃ½lmasÃ½
 /*
 #include<iostream>
 using namespace std;
 
 int f(int x) {
 	cout << x << endl;
-	return 9999 ; // fonksiyon cagrıldıktan sonra """cagrildiği yere""" 9999 döndürür.
+	return 9999 ; // fonksiyon cagrÃ½ldÃ½ktan sonra """cagrildiÃ°i yere""" 9999 dÃ¶ndÃ¼rÃ¼r.
 }
 
-void g(int x) { // void kullanılıyorsa return e gerek kalmaz. Her hangi bir değer döndürmeyecek.
+void g(int x) { // void kullanÃ½lÃ½yorsa return e gerek kalmaz. Her hangi bir deÃ°er dÃ¶ndÃ¼rmeyecek.
 	cout << x + 5 << endl;
 }
 
 int main() {
-	cout << f(5) << endl; // cagrildigi yer burasi ( fonksyona git fonksyonu tamamlayip döndükten sonra return değerini basıp alt satira geç)
+	cout << f(5) << endl; // cagrildigi yer burasi ( fonksyona git fonksyonu tamamlayip dÃ¶ndÃ¼kten sonra return deÃ°erini basÃ½p alt satira geÃ§)
 	cout << f(19) << endl;// cagrildigi yer burasi
 
 	g(10);
@@ -40,7 +40,7 @@ int main() {
 */
 //Example
 /*
-//Kullanıcıdan iki sayı alarak kombinasyonlarını ekrana bastıran fonks.
+//KullanÃ½cÃ½dan iki sayÃ½ alarak kombinasyonlarÃ½nÃ½ ekrana bastÃ½ran fonks.
 
 #include <iostream>
 using namespace std;
@@ -76,9 +76,9 @@ int main() {
 	return 0;
 }
 */
-//Özyineli Fonksiyonlar(Recursive Functions) **************************
+//Ã–zyineli Fonksiyonlar(Recursive Functions) **************************
 /*
-// 3!=3*2! , 2!=2*1! , 1!=1 Call back stack kullanarak sadece çarpma yaparak fakteroyel kullanmadan hesap yapma.
+// 3!=3*2! , 2!=2*1! , 1!=1 Call back stack kullanarak sadece Ã§arpma yaparak fakteroyel kullanmadan hesap yapma.
 
 //recursive
 #include<iostream>
@@ -126,7 +126,7 @@ int main() {
 	return 0;
 }
 */
-//Fonksiyonlar ile ilk 20 Mersanne Sayısı 1 3 7 15 31...Homework (32.) 
+//Fonksiyonlar ile ilk 20 Mersanne SayÃ½sÃ½ 1 3 7 15 31...Homework (32.) 
 /*
 #include <iostream>
 using namespace std;
@@ -147,9 +147,9 @@ int main() {
 	return 0;
 }
 */
-//İlk n tane Asal sayı Homework (32.) ***************
+//Ãlk n tane Asal sayÃ½ Homework (32.) ***************
 /*
-//2.3.4.5.... bölünemeyen sayılar...
+//2.3.4.5.... bÃ¶lÃ¼nemeyen sayÃ½lar...
 
 #include <iostream>
 using namespace std;
@@ -183,7 +183,7 @@ int main() {
 	}
 }
 */
-//Exapmle Özyineli Çarpım Fonksiyonu (37.)
+//Exapmle Ã–zyineli Ã‡arpÃ½m Fonksiyonu (37.)
 /*
 #include<iostream>
 using namespace std;
@@ -191,7 +191,7 @@ int multiplyR(int a, int b) { // bitis,adim,baslangic
 	if (b == 0)
 		return 0;
 	if (b < 0)
-		return multiplyR(0 - a,0 - b); // - olan b değerini + yapıp a yi - yapmak.
+		return multiplyR(0 - a,0 - b); // - olan b deÃ°erini + yapÃ½p a yi - yapmak.
 	return a + multiplyR(a, b - 1);
 }
 
@@ -226,7 +226,7 @@ int main() {
 //Random number generation ********
 /*
 #include <iostream>
-#include <ctime> // random sayı atarken önemli kütüphane
+#include <ctime> // random sayÃ½ atarken Ã¶nemli kÃ¼tÃ¼phane
 
 using namespace std;
 
@@ -235,28 +235,30 @@ int main() { // random number generator
 	int rg;
 
 	srand(time(NULL)); // seed
-	rg = rand()%10 +1; // sadece rg=rand(); döndürülürse cok büyük sayılar gelir. Bu yüzden mod kullanıp 0 olmaması için +1 veriyoruz.
+	rg = rand()%10 +1; // sadece rg=rand(); dÃ¶ndÃ¼rÃ¼lÃ¼rse cok bÃ¼yÃ¼k sayÃ½lar gelir. Bu yÃ¼zden mod kullanÃ½p 0 olmamasÃ½ iÃ§in +1 veriyoruz.
 	cout << rg << endl;
 	cout << endl;
 
-	rg = rand() % 6 + 1; // zar atmada 1 ile 6 arası sayı gelecek.
+	rg = rand() % 6 + 1; // zar atmada 1 ile 6 arasÃ½ sayÃ½ gelecek.
 	cout << rg;
 	for (int i = 1; i <= rg; i++)
 		cout << " * ";
 	cout << endl;
 	cout << endl;
 
-	rg = rand() % 2 + 1; // yazı tura da yaz veya tura gelmesi.
+	rg = rand() % 2 + 1; // yazÃ½ tura da yaz veya tura gelmesi.
 	if (rg == 1)
 		cout << "Head" << endl;
 	else
 		cout << "Tail" << endl;
 	cout << endl;
 
-	rg = rand() % 100; // 0-100 arasında her hangi bir sayı
+	rg = rand() % 100; // 0-100 arasÃ½nda her hangi bir sayÃ½
 	cout << rg << endl;
 
 
 	return 0;
 }
 */
+
+//DoÄŸukan Kaan Bozkurt
