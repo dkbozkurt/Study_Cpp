@@ -2,10 +2,10 @@
 /*
 #include <iostream>
 
-using namespace std; // "Yazılan fonksyonlari direkt std de ara". Kullanılmaz ise cout kısmı = std::cout << "Hello world!!! \n" << std::endl; şeklinde olmalıdır.
+using namespace std; // "YazÃ½lan fonksyonlari direkt std de ara". KullanÃ½lmaz ise cout kÃ½smÃ½ = std::cout << "Hello world!!! \n" << std::endl; Ã¾eklinde olmalÃ½dÃ½r.
 //buraya kadar olan yer standart.
 
-int main() //void main yazılırsa bu fonksiyonun bir şey döndürmeyeceği anlamına gelir.
+int main() //void main yazÃ½lÃ½rsa bu fonksiyonun bir Ã¾ey dÃ¶ndÃ¼rmeyeceÃ°i anlamÃ½na gelir.
 {
 	cout << "Hello world!!! \n" << endl;
 	return 0;
@@ -32,14 +32,14 @@ int main() {
 	cout << d << endl;
 	cout << x << endl;
 	cout << y << endl;
-	//int cout; , int int; gibi kelimeler tanımlanamaz cünkü bunlar "reserved keyword" olarak c++ tarafından önceden tanımlanmıstır.
-	//identifier sayi ile başlayamaz = int 2yas; gibi.
+	//int cout; , int int; gibi kelimeler tanÃ½mlanamaz cÃ¼nkÃ¼ bunlar "reserved keyword" olarak c++ tarafÃ½ndan Ã¶nceden tanÃ½mlanmÃ½stÃ½r.
+	//identifier sayi ile baÃ¾layamaz = int 2yas; gibi.
 
 	return 0;
 }
 
 */
-//Değişken tipleri
+//DeÃ°iÃ¾ken tipleri
 /*
 #include<iostream>
 using namespace std;
@@ -52,7 +52,7 @@ int main() {
 	cout << pi << endl;
 	long tl = 13271327;
 	cout << tl << endl;
-	char c = 'x';//charda " " kulanılınca olmuyor ' ' kullanılmalı.
+	char c = 'x';//charda " " kulanÃ½lÃ½nca olmuyor ' ' kullanÃ½lmalÃ½.
 	cout << c << endl;
 	return 0;
 }
@@ -67,8 +67,8 @@ int main() {
 	char c = 'x';
 	cout << c << endl;
 	int cc = c;
-	cout << cc << endl; // burada cc , c nin eşit oldugu "x" in ascii tablosuna göre decimal değerini basar.
-	//Her karakter bir sayıdır.
+	cout << cc << endl; // burada cc , c nin eÃ¾it oldugu "x" in ascii tablosuna gÃ¶re decimal deÃ°erini basar.
+	//Her karakter bir sayÃ½dÃ½r.
 
 	char G = 'G'; // "71"
 	cout << G << endl;
@@ -79,13 +79,13 @@ int main() {
 	int ipi = pi;
 	cout << ipi << endl;
 
-	//Decimal bir değeri chara dönüştürme.
+	//Decimal bir deÃ°eri chara dÃ¶nÃ¼Ã¾tÃ¼rme.
 	int at = 64;
 	cout << at << endl;
 	char cat = at;
 	cout << cat << endl;
-	cout << (char)at << endl; // Her hangi bir değişkenin başına, hangi tipine dönüşmesine istiyorsak basına parantez içinde yazabiliriz.
-	cout << (char)100 << endl; // 100 Decimal değerine sahip karateri görebiliriz.
+	cout << (char)at << endl; // Her hangi bir deÃ°iÃ¾kenin baÃ¾Ã½na, hangi tipine dÃ¶nÃ¼Ã¾mesine istiyorsak basÃ½na parantez iÃ§inde yazabiliriz.
+	cout << (char)100 << endl; // 100 Decimal deÃ°erine sahip karateri gÃ¶rebiliriz.
 
 
 	return 0;
@@ -102,20 +102,20 @@ int main() {
 	cout << a << endl;
 	a++; //postfix = son ek.
 	cout << a << endl;
-	++a;// prefix = ön ek.
+	++a;// prefix = Ã¶n ek.
 	cout << a << endl;
 	int b = 20;
-	cout << a + b * 2 << endl; // işlem önceliği
+	cout << a + b * 2 << endl; // iÃ¾lem Ã¶nceliÃ°i
 
-	cout << 15 % 2 << endl; // mod işlemi yapar 2 den kalan.
-	a--; // a=a-1 ayni şeydir.
+	cout << 15 % 2 << endl; // mod iÃ¾lemi yapar 2 den kalan.
+	a--; // a=a-1 ayni Ã¾eydir.
 	a = a - 1;
 	cout << a << endl;
 
-	cout << a++ << endl; // a'nin değeri alınıp kullanılır sonra 1 artttırılır.
-	// 10 basılıyor ama hafızada artık 11 oldu.
-	cout << ++a << endl; // a'nin değeri once arttırılır sonra denkleme konur.
-	// once arttırılıp 12 olacak sonra ekrana basılacak.
+	cout << a++ << endl; // a'nin deÃ°eri alÃ½nÃ½p kullanÃ½lÃ½r sonra 1 artttÃ½rÃ½lÃ½r.
+	// 10 basÃ½lÃ½yor ama hafÃ½zada artÃ½k 11 oldu.
+	cout << ++a << endl; // a'nin deÃ°eri once arttÃ½rÃ½lÃ½r sonra denkleme konur.
+	// once arttÃ½rÃ½lÃ½p 12 olacak sonra ekrana basÃ½lacak.
 	
 	int x = 10;
 	x = x - 1; // = x--;/--x;/x-=1;
@@ -123,10 +123,10 @@ int main() {
 	x += 5; // x= x+5 ;
 	cout << x << endl;
 
-	x *= 3; // x = x*3, bu satırdan sonra 33 olur.
+	x *= 3; // x = x*3, bu satÃ½rdan sonra 33 olur.
 	cout << x << endl; 
 	
-	x %= 5; // x = x%5, bu satırda 5 e göre mod alınır.
+	x %= 5; // x = x%5, bu satÃ½rda 5 e gÃ¶re mod alÃ½nÃ½r.
 	cout << x << endl;
 	return 0;
 }
@@ -159,10 +159,10 @@ int main() {
 	return 0;
 }
 */
-//Giriş/Çıkış (I/O) işlemleri
+//GiriÃ¾/Ã‡Ã½kÃ½Ã¾ (I/O) iÃ¾lemleri
 /*
 #include<iostream>
-using namespace std;// Standart giriş aracı klavye, standart giriş aracını ekran olarak tanımlar.
+using namespace std;// Standart giriÃ¾ aracÃ½ klavye, standart giriÃ¾ aracÃ½nÃ½ ekran olarak tanÃ½mlar.
 
 int main() {
 
@@ -170,14 +170,14 @@ int main() {
 	a = 10;
 	cout << a << endl;
 
-	cin >> a; // klavyeden değer okur.
+	cin >> a; // klavyeden deÃ°er okur.
 	cout << "Klavyeden " << a << " degeri girdiniz.\n" << endl;
 	cout << "Klavyeden girilen degerin 10 fazlasi " << a + 10 << endl;
 
 	return 0;
 }
 */
-//Homework 2 (Değişken değerini bastıran kod)
+//Homework 2 (DeÃ°iÃ¾ken deÃ°erini bastÃ½ran kod)
 /*
 #include<iostream>
 using namespace std;
@@ -193,3 +193,4 @@ int main() {
 	return 0;
 }
 */
+//Dogukan Kaan Bozkurt
